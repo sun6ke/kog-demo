@@ -1,0 +1,177 @@
+@import "../../common/gb.wxss";
+.intro-wx-box {
+  padding: 0 40rpx;
+  border-bottom: #eaeceb solid 5px;
+}
+.intro-wx-hd {
+  font-size: 30rpx;
+  color: #bf9c53;
+  line-height: 70rpx;
+  border-bottom: #eaeceb solid 1px;
+}
+.intro-wx-bd {
+  padding: 20rpx 0;
+}
+
+.jineng-tab {
+  flex-direction: row;
+  display: flex;
+}
+.jineng-tab .li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+}
+.jineng-tab .li image {
+  max-width: 100rpx;
+  max-height: 100rpx;
+  margin: 0 auto;
+}
+.jineng-tab .active image {
+  border: #fc9c25 solid 1px;
+  border-radius: 50%;
+  padding: 5rpx;
+}
+/* .jineng-tab .active image:before {
+  content: "";
+  border-width: 0 8px 8px 8px;
+  border-style: solid;
+  border-color: #f0f0f0 transparent;
+  transition: transform .25s;
+  width: 0px;
+  height: 0px;
+  background-size: 9px 8px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0 auto;
+}  */
+.jineng-con {
+  font-size: 28rpx;
+  padding: 20rpx 20rpx 0rpx 20rpx;
+  position: relative;
+}
+.jineng-con .li {
+  flex-direction: column;
+  display: flex;
+  display: none;
+}
+.jineng-con .active {
+  display: flex;
+}
+.jineng-con .li .skill-name {
+  font-size: 33rpx;
+}
+.jineng-con .li .skill-spend text{
+  padding-right: 20rpx;
+  font-size: 28rpx;
+  color: #fc9c25; 
+}
+.jineng-con .li .skill-desc {
+  color: #bfbfbf;
+}
+.jineng-con .li text {
+  margin: 5rpx 0;
+}
+
+/**
+  技能加点
+*/
+.add-skills {
+  display: flex;
+  flex-direction: column;
+}
+.level-add-skill {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.level-add-skill-pic {
+  position: relative;
+}
+.level-add-skill-pic image {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 5rpx 7rpx; 
+}
+.level-add-skill-pic .level {
+  position: absolute;
+  width: 28rpx;
+  height: 28rpx;
+  color: #fff;
+  background-color: #8a8a8a;
+  font-size: 20rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 14px;
+  right: 5rpx;
+  bottom: 5rpx;
+}
+.add-skills .skill-add-desc {
+  padding-left: 7rpx;
+  padding-top: 10rpx;
+}
+
+
+.arm-box {
+  width: 93.829%;
+  border-radius: 5px;
+}
+.arm-item {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  flex-direction: row;
+  display: flex;
+}
+.arm-item-l {
+  height: 120rpx;
+  min-width: 20%;
+  line-height: 120rpx;
+  overflow: hidden;
+}
+.arm-item-r {
+  flex: 1;
+}
+.arm-item-l .h3 {
+  font-size: 24rpx;
+  padding: 0 10rpx 0 20rpx;
+  color: #535353;
+  position: relative;
+}
+.arm-item-l .h3 span {
+  margin-left: 10%;
+}
+.arm-item-r .arm-list .wx-imageLi {
+  min-width: 27%;
+  max-width: 27%;
+}
+.pp-list .pp-item {
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.pp-list image {
+  min-width: 100rpx;
+  min-height: 100rpx;
+  max-width: 100rpx;
+  max-height: 100rpx;
+  display: block;
+  border-radius: 10rpx;
+  border: 1px solid #627fb0;
+}
+.pp-list .desc {
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+}
+.pp-list .desc .pp-name {
+  background-color: #bf9c53;
+  color: #fff;
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+  margin-right: 10rpx;
+}

@@ -1,0 +1,19 @@
+<template name="infoList">
+  <view class="wx-info" wx:for="{{infos}}">
+    <image class="wx-info-img" mode="aspectFill" src="{{item.imageUrl}}"></image>
+    <view class="wx-info-content">
+      <text class="wx-info-title">{{item.title}}</text>
+      <view class="wx-info-content-footer">
+        <text>{{item.time}}</text>
+        <view wx:if="{{item.isClick}}" class="like-info is-click" data-id="{{item.id}}" bindtap="addLike">
+          <image src="../../images/like_2.png"></image> 
+          <text>{{item.likeCount}}</text>
+        </view>
+        <view wx:else class="like-info" data-id="{{item.id}}" bindtap="addLike">
+          <image src="../../images/like_1.png"></image> 
+          <text>{{item.likeCount}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,34 @@
+<template name="videoFlex">
+  <view class="{{info.bigImage ? 'listBigBox':'listBox'}}">
+      <navigator url="./play?id={{info.id}}">
+          <view class="boxPic">
+              <image src="{{info.poster}}" mode="aspectFill"/>
+              <view class="time {{item.tag?'show':'hide'}}" >
+                  {{info.tag}}
+              </view>
+          </view>
+          <view class="boxTitle">
+              <text>{{info.title}}</text>
+          </view>
+          <view wx:if="{{!info.bigImage}}" class="boxSubTitle">
+              <text>{{info.subTitle}}</text>
+          </view>
+      </navigator>
+  </view>
+</template>
+
+<template name="videoList">
+  <view class="listVideos">
+      <view class="videoTitle">
+          <view class="videoText">
+              <text class="text">{{item.name}}</text>
+          </view>
+          <text class="more {{item.more?'show':'hide'}}">更多></text>
+      </view>
+      <view class="video-flex">
+        <block wx:for="{{item.infos}}" wx:for-item="info" wx:key="picUrl">
+          <template is="videoFlex" data="{{info: info}}"></template>
+        </block>
+      </view>
+  </view>
+</template>

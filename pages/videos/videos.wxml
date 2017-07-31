@@ -1,0 +1,2 @@
+<import src="../common/videoList"/>
+<template is="videoList" wx:for="{{videoList}}" data="{{item: item}}" wx:key="indexs"></template>

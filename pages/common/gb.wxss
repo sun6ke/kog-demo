@@ -1,0 +1,36 @@
+flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-row {
+  flex-direction: row;
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+  display: flex;
+}
+.scroll-view-h {
+  width: 100%;
+  white-space: nowrap;
+}
+.wx-box {
+  background-color: #fcfefd;
+  padding: 0 20rpx;
+  border-top: #eaeceb solid 1px;
+}
+.wx-hd {
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  color: #898989;
+  line-height: 80rpx;
+}
+.wx-bd {
+  padding: 5rpx 0 20rpx 0;
+}
+.wx-hd .wx-more {
+  width: 80rpx;
+  float: right;
+}
